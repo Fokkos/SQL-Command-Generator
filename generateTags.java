@@ -78,8 +78,8 @@ public class generateTags{
      */
     public void generate(String[] tags){
         for (int i = 1; i < tags.length+1; i++){
-            System.out.println("INSERT INTO " + table + " VALUES (" + i + ", " 
-                + tags[i-1] + ");");
+            System.out.println("INSERT INTO " + table + " VALUES (" + i + ", \"" 
+                + tags[i-1] + "\");");
         }
     }
     public static void main(String[] args){    
